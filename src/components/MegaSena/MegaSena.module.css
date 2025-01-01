@@ -1,0 +1,186 @@
+/* COMPONENTES MEGASENA styles.css */
+
+/** TELA GERAR PALPITES **/
+
+.card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #209869;box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 90%; /* Garante que o card nunca ultrapasse as bordas */
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  box-sizing: border-box; /* Inclui padding e borda dentro da largura */
+}
+
+.select {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  border: 1px solid #585858;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Para telas maiores, como desktops */
+@media (min-width: 768px) {
+  .card {
+    width: 66%;
+  }
+} 
+
+.numberBox {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 10 itens por linha */
+  gap: 4px; /* Espaçamento entre os itens */
+  padding: 1px 0;
+  width: 94%; /* Garante que o número da grid não quebre o layout */
+  box-sizing: border-box; /* Inclui padding na largura */
+}
+
+.numberBox > *:nth-child(n) {
+  justify-self: center; /* Centraliza itens individuais */
+}
+
+.numberItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #209869;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid transparent;
+  border-top: 3px solid #8ef03d;
+  border-right: 3px solid #209869;
+  border-radius: 50%;
+  margin-top: 40px;
+  animation: spin 1.5s linear infinite, color-change 3s infinite;
+  position: absolute; /* Coloca o spinner centralizado no container */
+}
+
+.numberBox.loading {
+  display: flex; /* Muda para flexbox quando o spinner está ativo */
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes color-change {
+  0% { border-top-color: rgb(197, 227, 144); }
+  50% { border-top-color: #8ef03d; }
+  100% { border-top-color: #209869; }
+}
+
+/****************** FINAL TELA GERAR PALPITES ***************** 
+/*********************************************************
+*********************************************************/ 
+
+
+/** INICIO TELA RESULTADO **/
+
+.teste{
+  display: flex;
+  background-color: #fafafa;
+}
+.listContainer {
+  overflow-y: auto; /* Adiciona scroll à lista */
+  background-color: transparent;
+}
+
+.content {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #209869;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.content > *:nth-child(n) {
+  justify-self: center; /* Centraliza itens individuais */
+}
+/* Para telas maiores, como desktops */
+@media (min-width: 768px) {
+  .card {
+    width: 90%;
+  }
+  .teste {
+    background-color: #fff;
+  }
+}
+.text {
+  font-size: 16px;
+  color: #585858;
+  margin-bottom: 10px;
+}
+
+.numberList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.numberCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #209869;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.shareBtn {
+  background: none;
+  border: none;
+  color: #ff1f1e;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.share-button .material-icons {
+  font-size: 12px;
+}
+
+.line {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+.aguardandoPalpites {
+  display: flex;
+  justify-self: center;
+  width: 90%;
+  background-color: #ccc;
+  margin-top: 60px;
+  padding: 10px;
+}

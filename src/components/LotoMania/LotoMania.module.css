@@ -1,0 +1,219 @@
+/* COMPONENTES LOTOMANIA styles.css */
+
+/** TELA GERAR PALPITES **/
+
+.card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #F78100;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 90%;
+  /* Garante que o card nunca ultrapasse as bordas */
+  height: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  box-sizing: border-box;
+  /* Inclui padding e borda dentro da largura */
+}
+
+/* Para telas maiores, como desktops */
+@media (min-width: 768px) {
+  .card {
+    width: 88%;
+    padding: 0px;
+    height: 420px;
+  }
+
+  .numberItem {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+.numberBox {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  /* 10 itens por linha */
+  gap: 4px;
+  /* Espaçamento entre os itens */
+  padding: 1px 0;
+  width: 94%;
+  /* Garante que o número da grid não quebre o layout */
+  box-sizing: border-box;
+  /* Inclui padding na largura */
+}
+
+.numberItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #F78100;
+  padding: 5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+}
+
+.numberTxt {
+  font-size: 16px;
+  color: #585858;
+}
+
+.numberBox>*:nth-child(n) {
+  justify-self: center;
+  /* Centraliza itens individuais */
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid transparent;
+  border-top: 3px solid yellow;
+  border-right: 3px solid #F78100;
+  border-radius: 50%;
+  margin-top: 100px;
+  animation: spin 1.5s linear infinite, color-change 3s infinite;
+  position: absolute;
+  /* Coloca o spinner centralizado no container */
+}
+
+.numberBox.loading {
+  display: flex;
+  /* Muda para flexbox quando o spinner está ativo */
+  justify-content: center;
+  align-items: center;
+  background-color: #F78100;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes color-change {
+  0% {
+    border-top-color: yellow;
+  }
+
+  50% {
+    border-top-color: #ffd333;
+  }
+
+  100% {
+    border-top-color: #F78100;
+  }
+}
+
+
+/****************** FINAL TELA GERAR PALPITES ***************** 
+/*********************************************************
+*********************************************************/
+
+
+/** INICIO TELA RESULTADO **/
+.listContainer {
+  overflow-y: auto;
+  /* Adiciona scroll à lista */
+  background-color: transparent;
+
+}
+
+.content {
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  width: 88%;
+  border-radius: 5px;
+  align-self: center;
+  justify-self: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff2bd;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #F78100;
+}
+
+
+/* Para telas maiores, como desktops */
+@media (min-width: 768px) {
+  .content {
+    padding: 14px;
+    align-items: "center";
+
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+.content>*:nth-child(n) {
+  justify-self: center;
+  /* Centraliza itens individuais */
+}
+
+.text {
+  font-size: 16px;
+  color: #585858;
+  margin-bottom: 10px;
+}
+
+.numberList {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  /* 10 itens por linha */
+  gap: 6px;
+  /* Espaçamento entre os itens */
+  padding: 10px 0;
+  /* Ajuste do espaçamento dentro da lista */
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #F78100;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.numberText {
+  color: #585858;
+  font-size: 16px;
+}
+
+.shareBtn {
+  background: none;
+  border: none;
+  color: #ff1f1e;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.share-button .material-icons {
+  font-size: 12px;
+}
+
+.line {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+.resultText {
+  font-weight: bold
+}
+
+.aguardandoPalpites {
+  display: flex;
+  justify-self: center;
+  width: 90%;
+  background-color: #ccc;
+  margin-top: 60px;
+  padding: 10px;
+}

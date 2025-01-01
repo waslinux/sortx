@@ -1,0 +1,47 @@
+/* Pagina LotoFácil styles.css */
+.menu {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+.menuButton {
+  font-family: 'Arial', sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Botão Principal */
+.primary {
+  background-color: #fff; /* Cor do botão */
+  color: #585858;
+  border-color: #585858;
+}
+
+.primary:hover {
+  background-color: #fff; /* Cor ao passar o mouse */
+  color: #931d89; /* Texto em verde */
+  border-color: #931d89;
+}
+
+/* Botão Secundário */
+.secondary {
+  background-color: #fff; /* Cor do botão */
+  color: #585858;
+  border-color: #585858;
+}
+.secondary:hover {
+  background-color: #fff; /* Cor ao passar o mouse */
+  color: #931d89; /* Texto em verde */
+  border-color: #931d89;
+}
+

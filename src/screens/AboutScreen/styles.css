@@ -1,0 +1,6 @@
+.container.about-page {
+  background-color: #ffffff !important;
+  /* Adicione !important se necessário */
+  width: 380px;
+  display: flex;
+}

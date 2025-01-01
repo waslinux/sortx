@@ -1,0 +1,164 @@
+/* Pagina LotoMania styles.css */
+.menu {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+/* Botões Modernos */
+.menuButton {
+  font-family: 'Arial', sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Botão Principal */
+.primary {
+  background-color: #fff;
+  /* Cor do botão */
+  color: #585858;
+  border-color: #585858;
+}
+
+.primary:hover {
+  background-color: #fff;
+  /* Cor ao passar o mouse */
+  color: #F78100;
+  /* Texto em verde */
+  border-color: #F78100;
+}
+
+/* Botão Secundário */
+.secondary {
+  background-color: #fff;
+  /* Cor do botão */
+  color: #585858;
+  border-color: #585858;
+}
+
+.secondary:hover {
+  background-color: #fff;
+  /* Cor ao passar o mouse */
+  color: #F78100;
+  /* Texto em verde */
+  border-color: #F78100;
+}
+
+.title {
+  color: #F78100;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*FIM MENU*/
+
+.card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #F78100;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  height: 400px;
+  width: 90%;
+  /* Largura fixa */
+}
+
+
+/* Para telas maiores, como desktops */
+@media (min-width: 768px) {
+  .card {
+    width: 88%;
+    padding: 0px;
+    height: 420px;
+  }
+
+  .numberItem {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+.numberBox {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  /* 10 itens por linha */
+  gap: 8px;
+  /* Espaçamento entre os itens */
+  padding: 10px 0;
+}
+
+.numberItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #F78100;
+  padding: 5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+}
+
+.numberTxt {
+  font-size: 16px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid transparent;
+  border-top: 3px solid yellow;
+  border-right: 3px solid #F78100;
+  border-radius: 50%;
+  margin-top: 100px;
+  animation: spin 1.5s linear infinite, color-change 3s infinite;
+  position: absolute;
+  /* Coloca o spinner centralizado no container */
+}
+
+.numberBox.loading {
+  display: flex;
+  /* Muda para flexbox quando o spinner está ativo */
+  justify-content: center;
+  align-items: center;
+  background-color: #F78100;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes color-change {
+  0% {
+    border-top-color: yellow;
+  }
+
+  50% {
+    border-top-color: #ffd333;
+  }
+
+  100% {
+    border-top-color: #F78100;
+  }
+}
+
+
+h1 {
+  margin-bottom: -20px;
+}

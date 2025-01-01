@@ -1,0 +1,19 @@
+.btn {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin-bottom: 5px;
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    color: #BBBBBB;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:hover {
+    color: #888888; /* Estilo para hover */
+}

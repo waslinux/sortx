@@ -1,0 +1,143 @@
+/* Pagina MegaSena styles.css */
+.menu {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+/* Botões Modernos */
+.menuButton {
+  font-family: 'Arial', sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Botão Principal */
+.primary {
+  background-color: #fff; /* Cor do botão */
+  color: #585858;
+  border-color: #585858;
+}
+
+.primary:hover {
+  background-color: #fff; /* Cor ao passar o mouse */
+  color: #209869; /* Texto em verde */
+  border-color: #209869;
+}
+
+/* Botão Secundário */
+.secondary {
+  background-color: #fff; /* Cor do botão */
+  color: #585858;
+  border-color: #585858;
+}
+.secondary:hover {
+  background-color: #fff; /* Cor ao passar o mouse */
+  color: #209869; /* Texto em verde */
+  border-color: #209869;
+}
+
+.title {
+  color: #209869;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.select {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  border: 1px solid #585858;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #209869;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 84%;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+/* Para telas maiores, como desktops */
+@media (min-width: 768px) {
+  .card {
+    width: 66%;
+  }
+} 
+.numberBox {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 itens por linha */
+  justify-content: center; /* Alinha o grid horizontalmente */
+  align-items: center; /* Alinha o grid verticalmente */
+  width: 96%;
+  gap: 2px; /* Espaçamento entre os itens */
+}
+
+.numberBox > *:nth-child(n) {
+  justify-self: center; /* Centraliza itens individuais */
+}
+
+.numberItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #209869;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid transparent;
+  border-top: 3px solid #8ef03d;
+  border-right: 3px solid #209869;
+  border-radius: 50%;
+  margin-top: 140px;
+  animation: spin 1.5s linear infinite, color-change 3s infinite;
+  position: absolute; /* Coloca o spinner centralizado no container */
+}
+
+.numberBox.loading {
+  display: flex; /* Muda para flexbox quando o spinner está ativo */
+  justify-content: center;
+  align-items: center;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes color-change {
+  0% { border-top-color: rgb(197, 227, 144); }
+  50% { border-top-color: #8ef03d; }
+  100% { border-top-color: #209869; }
+}
+
+h1 {
+  margin-bottom: -20px;
+}
