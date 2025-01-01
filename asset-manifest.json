@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/testeLAF/static/css/main.03f19a85.css",
-    "main.js": "/testeLAF/static/js/main.158bd652.js",
-    "static/media/lotofacil.png": "/testeLAF/static/media/lotofacil.34d7d7b64efd869be56c.png",
-    "static/media/megasena.png": "/testeLAF/static/media/megasena.35f29429a35281b1c953.png",
-    "static/media/lotomania.png": "/testeLAF/static/media/lotomania.e3eca7bee48b89830f92.png",
-    "service-worker.js": "/testeLAF/service-worker.js",
-    "index.html": "/testeLAF/index.html",
-    "main.03f19a85.css.map": "/testeLAF/static/css/main.03f19a85.css.map",
-    "main.158bd652.js.map": "/testeLAF/static/js/main.158bd652.js.map"
+    "main.css": "/sortx/static/css/main.03f19a85.css",
+    "main.js": "/sortx/static/js/main.667fbf41.js",
+    "static/media/lotofacil.png": "/sortx/static/media/lotofacil.34d7d7b64efd869be56c.png",
+    "static/media/megasena.png": "/sortx/static/media/megasena.35f29429a35281b1c953.png",
+    "static/media/lotomania.png": "/sortx/static/media/lotomania.e3eca7bee48b89830f92.png",
+    "service-worker.js": "/sortx/service-worker.js",
+    "index.html": "/sortx/index.html",
+    "main.03f19a85.css.map": "/sortx/static/css/main.03f19a85.css.map",
+    "main.667fbf41.js.map": "/sortx/static/js/main.667fbf41.js.map"
   },
   "entrypoints": [
     "static/css/main.03f19a85.css",
-    "static/js/main.158bd652.js"
+    "static/js/main.667fbf41.js"
   ]
 }
