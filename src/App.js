@@ -63,6 +63,7 @@ const App = () => {
 
       {/* Conteúdo */}
       <div className="content">
+        <BrowserRouter basename="/"
         <Routes>
           <Route path="/" element={<HomeScreen />} />
           <Route path="/about" element={<AboutScreen />} />
@@ -73,6 +74,7 @@ const App = () => {
           {/* Redirecionamento para a rota inicial */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
+            </BrowserRouter>
       </div>
     </Router>
   );
