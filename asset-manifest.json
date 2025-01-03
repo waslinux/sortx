@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.66c01f88.css",
-    "main.js": "/static/js/main.fbb255b1.js",
+    "main.css": "/static/css/main.52c7c928.css",
+    "main.js": "/static/js/main.d0a8c389.js",
     "static/media/lotofacil.png": "/static/media/lotofacil.34d7d7b64efd869be56c.png",
     "static/media/megasena.png": "/static/media/megasena.35f29429a35281b1c953.png",
     "static/media/lotomania.png": "/static/media/lotomania.e3eca7bee48b89830f92.png",
     "service-worker.js": "/service-worker.js",
     "index.html": "/index.html",
-    "main.66c01f88.css.map": "/static/css/main.66c01f88.css.map",
-    "main.fbb255b1.js.map": "/static/js/main.fbb255b1.js.map"
+    "main.52c7c928.css.map": "/static/css/main.52c7c928.css.map",
+    "main.d0a8c389.js.map": "/static/js/main.d0a8c389.js.map"
   },
   "entrypoints": [
-    "static/css/main.66c01f88.css",
-    "static/js/main.fbb255b1.js"
+    "static/css/main.52c7c928.css",
+    "static/js/main.d0a8c389.js"
   ]
 }
